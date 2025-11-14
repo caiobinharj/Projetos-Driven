@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="mae">
+
+
+        <div class="topo">
+            <h1>DrivenEats</h1>
+            <p class="textotopo">Sua comida em 6 minutos</p>
+        </div>
+
+
+        <div class="selecao1">
+
+            <h2>Primeiro, seu prato</h2>
+            <div class="scroll s1">
+
+                <button class="calabresa bloco" onclick="seletor1(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <p class="nomeprato">Prato de calabresa</p>
+                    <p class="descricao">Acompanha arroz, feijão e salada</p>
+                    <p class="preco">14.90</p>
+                </button>
+
+                <button class="carne bloco" onclick="seletor1(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/pf_carne.jpg"/>
+                    <p class="nomeprato">Prato de carne</p>
+                    <p class="descricao">Acompanha arroz, feijão e salada</p>
+                    <p class="preco">18.90</p>
+                </button>
+
+                <button class="frango terceiro bloco" onclick="seletor1(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/pf_frango.jpg"/>
+                    <p class="nomeprato">Prato de frango</p>
+                    <p class="descricao">Acompanha arroz, feijão e salada</p>
+                    <p class="preco">15.90</p>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="selecao2">
+
+            <h2>Agora, sua bebida</h2>
+            <div class="scroll s2">
+
+                <button class="fanta bloco " onclick="seletor2(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/fanta.png"/>
+                    <p class="nomeprato">Fanta Laranja</p>
+                    <p class="descricao">Nada mais refrescante</p>
+                    <p class="preco">4.90</p>
+                </button>
+
+                <button class="coca bloco" onclick="seletor2(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/coca.png"/>
+                    <p class="nomeprato">Coca-Cola</p>
+                    <p class="descricao">Geladassa</p>
+                    <p class="preco">5.90</p>
+                </button>
+
+                <button class="suco bloco terceiro" onclick="seletor2(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/suco.png"/>
+                    <p class="nomeprato">Suco de Laranja</p>
+                    <p class="descricao">Batida na hora com gelo</p>
+                    <p class="preco">8.90</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="selecao3">
+
+            <h2>Por fim, sua sobremesa</h2>
+            <div class="scroll s3">
+
+                <button class="brownie bloco" onclick="seletor3(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/brownie.jpg"/>
+                    <p class="nomeprato">Brownie</p>
+                    <p class="descricao">Quentinho, feito com cacau em pó!</p>
+                    <p class="preco">8.90</p>
+                </button>
+
+                <button class="pudim bloco" onclick="seletor3(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/pudim.jpg"/>
+                    <p class="nomeprato">Pudim de leite</p>
+                    <p class="descricao">À moda do chefe!</p>
+                    <p class="preco">12.90</p>
+                </button>
+
+                <button class="mousse bloco terceiro" onclick="seletor3(this); fechar_pedido()">
+                    <img src="projeto__driven-eats__imagens/mouse.jpg"/>
+                    <p class="nomeprato">Mousse de Maracujá</p>
+                    <p class="descricao">Com fruta de verdade!</p>
+                    <p class="preco">9.90</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <button class="botao" onclick="fecharCompra()">
+                <p class="textobotao">Selecione os 3 itens para fechar o pedido</p>
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <div class="escondido quadradofim">
+
+        <div class="textoquadrado negrito">
+            Confirme seu pedido
+        </div>
+
+        <div class="textoquadrado formatado">
+            <p class="p1">Frango yin yang</p>
+            <p class="t1">14,90</p>
+        </div>
+
+        <div class="textoquadrado formatado">
+            <p class="p2">Frango yin yang</p>
+            <p class="t2">14,90</p>
+        </div>
+
+        <div class="textoquadrado formatado">
+            <p class="p3">Frango yin yang</p>
+            <p class="t3">14,90</p>
+        </div>
+
+        <div class="textoquadrado formatado negrito">
+            <p>Total</p>
+            <p class="total">14,90</p>
+        </div>
+
+
+        <a class="finalizar textoquadrado negrito" href="https://wa.me/5521998326272">Tudo certo, pode pedir!</a>
+        <button class="cancelar textoquadrado negrito" onclick="cancelarCompra()">Cancelar</button>
+    </div>
+
+    <div class="blocofinal escondido"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

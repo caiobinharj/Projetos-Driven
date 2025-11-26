@@ -1,0 +1,78 @@
+### Variáveis
+@baseUrl = http://localhost:5000
+@token = seu_token_aqui
+
+### 1. Health Check
+GET {{baseUrl}}/health
+
+### 2. Criar Conta
+POST {{baseUrl}}/sign-up
+Content-Type: application/json
+
+{
+  "name": "João Silva",
+  "email": "joao@email.com",
+  "password": "senha123"
+}
+
+### 3. Login
+POST {{baseUrl}}/sign-in
+Content-Type: application/json
+
+{
+  "email": "joao@email.com",
+  "password": "senha123"
+}
+
+### 3.1. Login com usuário Demo
+POST {{baseUrl}}/sign-in
+Content-Type: application/json
+
+{
+  "email": "demo@driven.com.br",
+  "password": "demo123"
+}
+
+### 4. Criar Credencial
+POST {{baseUrl}}/credentials
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Facebook",
+  "url": "https://www.facebook.com",
+  "username": "joao.silva",
+  "password": "minhasenha123"
+}
+
+### 5. Listar todas as Credenciais
+GET {{baseUrl}}/credentials
+Authorization: Bearer {{token}}
+
+### 6. Buscar Credencial por ID
+GET {{baseUrl}}/credentials/1
+Authorization: Bearer {{token}}
+
+### 7. Atualizar Credencial
+PUT {{baseUrl}}/credentials/1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Facebook Atualizado",
+  "url": "https://www.facebook.com",
+  "username": "joao.silva.novo",
+  "password": "novasenha456"
+}
+
+### 8. Deletar Credencial
+DELETE {{baseUrl}}/credentials/1
+Authorization: Bearer {{token}}
+
+### 9. Deletar Conta
+DELETE {{baseUrl}}/erase
+Authorization: Bearer {{token}}
+
+
+
+
